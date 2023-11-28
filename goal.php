@@ -12,9 +12,11 @@
     <div class="container">
         <div class="row">
             <<?php include 'includes/nav.php';
+               include 'includes/process_task.php';
                 
-            ?>
-            <img src="images/HZDS1341.JPEG" alt="">
+            ?> 
+             
+            <textarea name="Description" id="Goal" cols="30" rows="10" style="margin-top: 100px;">Description</textarea>
 
         </div>
         <div class="row">

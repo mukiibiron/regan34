@@ -3,13 +3,23 @@
        ?>
        <div class="row">
             <?php include 'includes/nav.php';
+                  // delete task
+                  if (isset($_GET['del_task'])) {
+                    $ID = $_GET['del_task'];
+
+                    mysqli_query($connection, "DELETE FROM tasks2 WHERE id=".$ID);
+                    header('location: index.php');
+                  }
+                // initialize errors variable
+                $errors = "";
+
                 
             ?>
         
         </div>
         <div class="row">
             <?php
-                include("Dconnect.php");
+                require_once "includes/Dconnect.php";
             ?>
 
             

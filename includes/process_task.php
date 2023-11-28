@@ -1,10 +1,10 @@
 <?php 
-       include("status.php");
+     
 
        require_once "Dconnect.php";
       
           
-    $query = " INSERT INTO task ( Task, Goal, Date ) value( ?,?,?)";
+    $query = "INSERT INTO task ( Task, Goal, Date ) values( ?,?,?)";
     
     $stmt =mysqli_prepare($connection,$query);
 

@@ -2,16 +2,7 @@
     <?php
         include "includes/head.html";
         include("header.php");
-                      // delete task
-                      if (isset($_GET['del_task'])) {
-                        $ID = $_GET['del_task'];
-
-                        mysqli_query($connection, "DELETE FROM tasks2 WHERE id=".$ID);
-                        header('location: index.php');
-                      }
-                    // initialize errors variable
-                    $errors = "";
-
+                     
     ?>
    
 <body>
